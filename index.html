@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+    href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="sidebar">
+      <ul>
+        <li><a href="#subsection"><ion-icon name="home-outline"></ion-icon></a></li>
+        <li><a href="#services"><ion-icon name="list-outline"></ion-icon></a></li>
+        <li><a href="#proyectos"><ion-icon name="bag-outline"></ion-icon></a></li>
+        <li><a href="#contact"><ion-icon name="paper-plane-outline"></ion-icon></a></li>
+      </ul>
+    </div>
+  </header>
+    <div class="container">
+        <div class="section">
+            <div class="subsection">
+                <h1> Alejandra Belen Perez Teposte </h1>
+                <p>Desarrolladora web junior </p>
+                <div class="status">
+                    <p class="p-status"> Disponible </p>
+                    <div class="dot"></div>
+                </div>
+                <img class="profile" src="./IMG20231205183720.jpg" alt="Belen dev">
+            </div>
+            <div class="subsection">
+                <p class="p-desc"> Hola soy Belen, desarrolladora web junior en constante crecimiento. Estoy ampliando mis habilidades tecnicas y soft kills para ofrecer un valos agregado al equipo. En mi tiempo libre me dedico a mi emprendimiento de costura, bordado y tejido, donde combino mi creatividad y habilidades para crear piezas unicas.</p>
+                <button class="btn-black">TRABAJOS </button>
+                <button class="btn-lined">DESCARGAR CV</button>
+            </div>
+        </div>
+        <div class="section">
+          <ion-icon class="icon" name="logo-github"></ion-icon>
+          <ion-icon class="icon" name="logo-html5"></ion-icon>
+          <ion-icon class="icon" name="logo-javascript"></ion-icon>
+          <ion-icon class="icon" name="logo-css3"></ion-icon>
+          <ion-icon class="icon" name="language-outline"></ion-icon>          
+        </div>
+        <div class="manzana">
+          <div class="section">
+            <div class="exp">
+              <div class="div1">
+                <h1>EDUCACION</h1>
+                <p>Manejo de github</p>
+                <p><a href="">UDEMY</a></p>
+                <p class="year">2024</p>
+              </div>
+              <div class="div2">
+                <h1>EXPERIENCIA</h1>
+                <p>HILOS MAGICOS</p>
+                <p class="year">2024</p>
+              </div>
+              <div class="div3">
+                <p> MANEJO DE JAVASCRIPT</p>
+                <p><a href=""><b>UDEMY</b></a></p>
+                <p class="year">2024</p>
+              </div>
+              <div class="div4">
+                <p>ENCARGADA DE SUCURSAL</p>
+                <p>OXXO</p>
+                <p class="year">2023 </p>
+              </div>
+              <div class="div5">
+                <p>MANEJO DE HTML Y CSS</p>
+                <p><a href=""><b>UDEMY</b></a></p>
+                <p class="year">2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="proyectos" id="proyectos">
+            <div class="section">
+              <h1>PROYECTOS</h1>
+              <ion-icon class="bag" name="bag-outline"></ion-icon>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="card-content">
+                  <img src="">
+                </div>
+                <div class="footer-card">
+                  <p class="durazno">
+                    <h3>PROXIMAMENTE</h3>
+                  </p>
+                  <button class="boton">
+                    <p>submit</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section" id="services">
+            <h1>SERVICIOS</h1>
+            <ion-icon class="bag" name="list-outline"></ion-icon>
+          </div>
+          </div>
+        </div>
+        <div class="section" id="contact">
+            <h1>Contacto</h1>
+            <ion-icon class="bag" name="paper-plane-outline"></ion-icon>
+            <form id="form">
+                <div class="field">
+                  <label for="from_name">Nombre</label>
+                  <input type="text" name="from_name" id="from_name">
+                </div>
+                <div class="field">
+                  <label for="email_id">correo</label>
+                  <input type="text" name="email_id" id="email_id">
+                </div>
+                <div class="field">
+                  <label for="message">Mensaje</label>
+                  <input type="text" name="message" id="message">
+                </div>
+              
+                <input type="submit" id="button" value="ENVIAR CORREO" >
+              </form>
+        </div>
+    </div>
+    <script src="email.js"></script>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('q3r9WAW3-1_c1KRz4')
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<sript nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></sript>
+</body>
+</html>
